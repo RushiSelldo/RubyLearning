@@ -37,7 +37,10 @@ end
 frequencies=frequencies.sort_by do |name,count|
   count
 end
+   
 frequencies.reverse!
 frequencies.each { |name,count|
   puts "#{name} #{count}"
 }
+
+
