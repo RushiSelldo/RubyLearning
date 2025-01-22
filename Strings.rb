@@ -15,3 +15,17 @@ state = gets.chomp
 state.upcase!
 
 puts "Your name is #{first_name} and surname is #{last_name} you live in #{city} of #{state}"
+
+
+print "Write something here..."
+user_input=gets.chomp
+user_input.downcase!
+
+
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+else
+  print "There is nothing to do here..."
+end
+puts "Transformed string is #{user_input}"
